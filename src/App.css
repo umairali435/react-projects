@@ -35,13 +35,42 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 12px;
+  margin-inline: 10px;
+  justify-content: center;
   display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  text-align: start;
+  line-height: 0;
+  width: 100%;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
 }
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.contacts-card {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .card-content {
   width: 500px;
   text-align: start;
+}
+
+.map-link {
+  margin-left: 10px;
 }
 
 main {
@@ -72,22 +101,15 @@ header {
 h1 {
   font-size: 1.5rem;
   margin: 0;
+  color: black;
   font-weight: 500;
+  text-align: start;
 }
 
-.location-image {
-  width: 100px;
+.card-image {
   height: 150px;
+  width: 200px;
   object-fit: cover;
-}
-
-.location-image>img {
-  width: 15px;
-  height: 15px;
-  object-fit: cover;
-}
-
-.location-image {
-  display: inline;
-  justify-content: space-evenly;
+  margin-bottom: 5px;
+  border-radius: 5px;
 }
